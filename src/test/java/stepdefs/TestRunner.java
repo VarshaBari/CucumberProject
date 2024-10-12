@@ -9,12 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
 		
-		monochrome= true,
+		monochrome= false,
 		plugin={"pretty","html:target/html-cucumber","json:target/cucumber.json"},
 	
 		features = "src/test/java/features", 
 		glue = "stepdefs",
-		tags = {"@U_1000"} //- to run single tag
+		tags = {"@Simplilearn"} //- to run single tag
 		// tags = {"not @Ignore"} - to ignore a particular tag
 		// tags = {"@Calculator"} - to run the entire feature use feature level tag
 		// tags = {"@Simplilearn and not @Ignore"} - will run entire feature file except ignored one

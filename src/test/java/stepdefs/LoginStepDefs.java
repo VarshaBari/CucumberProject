@@ -25,7 +25,7 @@ public class LoginStepDefs {
 		driver.get("https://simplilearn.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		Hooks.test.log(LogStatus.PASS, "Application Launched");
+	//	Hooks.test.log(LogStatus.PASS, "Application Launched");
 	}
 
 	@Given("I click on the Login link")
@@ -33,7 +33,7 @@ public class LoginStepDefs {
 	    // Write code here that turns the phrase above into concrete actions
 		WebElement LoginLink = driver.findElement(By.linkText("Log in"));
 		LoginLink.click();
-		Hooks.test.log(LogStatus.PASS, "Clicked on Login Link");
+	//	Hooks.test.log(LogStatus.PASS, "Clicked on Login Link");
 	}
 
 	@When("I enter the user name")
@@ -41,7 +41,7 @@ public class LoginStepDefs {
 	    // Write code here that turns the phrase above into concrete actions
 		WebElement UserName = driver.findElement(By.name("user_login"));
 		UserName.sendKeys("abc@xyz.com");
-		Hooks.test.log(LogStatus.PASS, "Entered the Username ");
+		//Hooks.test.log(LogStatus.PASS, "Entered the Username ");
 	}
 
 	@When("I enter the password")
@@ -49,7 +49,7 @@ public class LoginStepDefs {
 	    // Write code here that turns the phrase above into concrete actions
 		WebElement Password = driver.findElement(By.id("password"));
 		Password.sendKeys("Abc@1234");
-		Hooks.test.log(LogStatus.PASS, "Entered the Password ");
+		//Hooks.test.log(LogStatus.PASS, "Entered the Password ");
 	}
 
 	@When("I click on the login button")
@@ -73,7 +73,7 @@ public class LoginStepDefs {
 	    // Write code here that turns the phrase above into concrete actions
 		WebElement UserName = driver.findElement(By.name("user_login"));
 		UserName.sendKeys(UserNameVal);
-		Hooks.test.log(LogStatus.PASS, "Entered the Username " + UserNameVal);
+	//	Hooks.test.log(LogStatus.PASS, "Entered the Username " + UserNameVal);
 	}
 
 	@When("I enter the password as {string}")
@@ -81,7 +81,7 @@ public class LoginStepDefs {
 	    // Write code here that turns the phrase above into concrete actions
 		WebElement Password = driver.findElement(By.id("password"));
 		Password.sendKeys(PasswordVal);
-		Hooks.test.log(LogStatus.PASS, "Entered the Password " + PasswordVal);
+	//	Hooks.test.log(LogStatus.PASS, "Entered the Password " + PasswordVal);
 	}
 	
 	@Then("I see the below login options present on the screen")
