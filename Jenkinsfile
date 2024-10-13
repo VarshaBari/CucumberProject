@@ -17,10 +17,10 @@ pipeline {
         stage('Run Test') {
             steps {
                 // Run Maven on a Unix agent.
-                //sh "mvn clean test -Dcucumber.filter.tags=@Simplilearn"
+                sh "mvn clean test -Dcucumber.filter.tags=@Simplilearn"
 
                 // To run Maven on a Windows agent, use
-                bat "mvn clean test -Dcucumber.filter.tags=@Simplilearn"
+              //  bat "mvn clean test -Dcucumber.filter.tags=@Simplilearn"
             }
             
             post {
