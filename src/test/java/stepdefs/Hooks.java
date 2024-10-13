@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -23,7 +24,7 @@ public class Hooks {
 	public void SetUp() {
 		WebDriverManager.chromedriver().clearDriverCache().setup();
 	//	test = report.startTest(scenario.getName());
-		driver = new ChromeDriver();
+		driver = new FirefoxDriver();
 	}
 	
 	@After
