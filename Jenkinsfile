@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout Source Code') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/nicks204/Cucumber_Project.git'
+                git 'https://github.com/VarshaBari/CucumberProject.git'
             }
         }
         
